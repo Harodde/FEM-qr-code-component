@@ -79,6 +79,8 @@ body {
 .attribution {
     font-size: 11px;
     margin-bottom: 10px;
+    margin-top: auto;
+    /* Place l'attribution en bas du flux */
 }
 
 .attribution a {
