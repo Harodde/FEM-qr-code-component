@@ -23,8 +23,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Harodde/frontendmentorProjectGit)
-- Live Site URL: [GitHub Pages](https://harodde.github.io/frontendmentorProjectGit/)
+- Solution URL: [GitHub](https://github.com/Harodde/FEM-qr-code-component)
+- Live Site URL: [GitHub Pages](https://harodde.github.io/FEM-qr-code-component)
 
 ## My process
 

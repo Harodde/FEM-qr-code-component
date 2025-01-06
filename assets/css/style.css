@@ -5,82 +5,89 @@
     --Slate900: hsl(218, 44%, 22%);
 }
 
-/* Réinitialisation des styles par défaut */
+/* CSS Reset */
 *,
 *::before,
 *::after {
     margin: 0;
-    /* Supprime les marges par défaut */
     padding: 0;
-    /* Supprime les espacements internes par défaut */
     box-sizing: border-box;
-    /* Intègre le contenu, les bordures et le padding dans la largeur/hauteur */
 }
 
+/* General styling */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     background-color: var(--Slate300);
-    font-family: Outfit;
+    font-family: 'Outfit', system-ui, sans-serif;
 
     min-height: 100vh;
-
-    padding-top: 10px;
-    /* Décalage par rapport au footer */
+    padding: 16px;
+    /* Padding on all sides */
+    gap: 20px;
+    /* Space between main and footer */
 }
 
-.main_container {
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Maintient un espacement spécifique */
+}
+
+.card {
     background-color: var(--White);
     border-radius: 20px;
-    width: 320px;
-    height: 499px;
+    max-width: 20rem;
     padding: 16px 16px 40px 16px;
-    margin-top: auto;
-    /* Supprime tout effet collant au haut de la page */
-    /* box-shadow: 0px 15px 20px -10px hsla(0, 0%, 0%, 0.2); */
     box-shadow: 0px 25px 35px hsla(0, 0%, 0%, 0.1);
 }
 
-.main_container img {
-    width: 288px;
-    height: 288px;
+.card img {
+    display: block;
+    /* Center the image */
+    max-width: 100%;
+    /* Prevent overflow */
+    height: auto;
+    /* Maintain aspect ratio */
     border-radius: 8px;
 }
 
 .text_content {
-    text-align: center;
     margin-top: 24px;
-    padding: 0 16px;
-
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    /* Ajoute un espace entre les enfants (h1 et p) */
+    gap: 1rem;
+    /* Accessible spacing */
 }
 
-.main_container h1 {
+.card h2 {
     color: var(--Slate900);
     font-weight: bold;
-    font-size: 22px;
-    line-height: 120%;
-    letter-spacing: 0;
+    font-size: 1.375rem;
+    /* Replaced 22px with rem */
+    line-height: 1.2;
+    /* 120% */
+    letter-spacing: 0.05em;
 }
 
-.main_container P {
+.card p {
     color: var(--Slate500);
-    font-size: 15px;
-    line-height: 140%;
-    letter-spacing: 0.2px;
+    font-size: 0.9375rem;
+    /* Replaced px with rem */
+    line-height: 1.4;
+    letter-spacing: 0.0525em;
+    /* Replaced px with em */
 }
 
 .attribution {
-    font-size: 11px;
-    margin-bottom: 10px;
+    font-size: 0.6875rem;
+    /* Replaced px with rem */
     margin-top: auto;
-    /* Place l'attribution en bas du flux */
 }
 
 .attribution a {
